@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class S7_Contador : MonoBehaviour
 {
+    [SerializeField] ChangeScene auxiliar;
+    [SerializeField] S8_DestruyeObjetos2 aux_cont_enemigos;
+
     int cont;
     [SerializeField] TextMeshProUGUI texto_contador;
     // Start is called before the first frame update
@@ -23,6 +26,8 @@ public class S7_Contador : MonoBehaviour
         }
 
         //SceneManager.LoadScene(7); ..... ME LLEVE A UNA ESCENA SI SE ME ACABA EL TIEMPO
+        int score = aux_cont_enemigos.contador;
+        auxiliar.cambioEscena(2, score); //escena de fin de juego
 
     }
 }
