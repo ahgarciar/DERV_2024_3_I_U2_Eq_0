@@ -1,17 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
     int puntuacion_score; 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] TextMeshProUGUI valor_score;
 
     // Update is called once per frame
     void Update()
@@ -24,11 +20,11 @@ public class ChangeScene : MonoBehaviour
           }  
 
         }
-        else if(index_scene_active == 0){ //juego
+        else if(index_scene_active == 1){ //juego
 
         }
-        else{ //escena final
-
+        else{ //escena final - index 2
+              valor_score.text = PlayerPrefs.GetInt("Puntaje", 0).ToString();
         }
 
 

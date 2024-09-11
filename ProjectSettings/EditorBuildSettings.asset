@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ChangeSceneScore/Fin.unity
     guid: 55d2c064d682542e8962db1148632510
+  - enabled: 1
+    path: Assets/MiniJuego1/M1_Inicio.unity
+    guid: c34a3cb081baa42f98a2412afa6d61ad
+  - enabled: 1
+    path: Assets/MiniJuego1/M1_Principal.unity
+    guid: 49e088b775fc645bb9b800040a74bdbe
+  - enabled: 1
+    path: Assets/MiniJuego1/M1_Fin.unity
+    guid: fbffcd3c11270422b93fcafa6aba62c9
   m_configObjects: {}
